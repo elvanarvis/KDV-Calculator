@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">"                   "KDV HESAPLA</string>
+    <string name="tutar_edit_text">Lütfen tutarı giriniz</string>
+    <string name="islem_text_wiew">İşlem:</string>
+    <string name="islem_1">KDV dahil tutardan KDV hariç fiyat hesaplama</string>
+    <string name="islem_2">KDV hariç tutardan KDV dahil fiyat hesaplama</string>
+    <string name="islem_3">KDV"'"den matrah bulma</string>
+    <string name="kdv_text">KDV Oranı:</string>
+    <string name="radio_button_1_text">%1</string>
+    <string name="radio_button_2_text">%8</string>
+    <string name="radio_button_3_text">%18</string>
+    <string name="radio_button_4_text">Diğer</string>
+
+    <string name="kdv_text_1">KDV Dahil Tutar:</string>
+    <string name="kdv_text_2">KDV Hariç Tutar:</string>
+    <string name="kdv_text_3">KDV Tutarı:</string>
+    <string name="kdv_text_4">KDV(+%s+)</string>
+    <string name="button_text">hesapla</string>
+</resources>

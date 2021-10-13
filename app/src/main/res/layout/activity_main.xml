@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motherLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kdv_background"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/layout_bacgorund"
+        app:layout_constraintStart_toStartOf="@id/motherLayout"
+        app:layout_constraintEnd_toEndOf="@id/motherLayout"
+        app:layout_constraintTop_toTopOf="@id/motherLayout"
+        app:layout_constraintBottom_toBottomOf="@id/motherLayout"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/islemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/islem_text_wiew"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/outline_arrow_right_black_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/islemGroupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/islem1Id"
+            android:layout_marginTop="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/islemId">
+
+            <RadioButton
+                android:id="@+id/islem1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/islem_1"
+                android:textSize="13dp" />
+
+            <RadioButton
+                android:id="@+id/islem2Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/islem_2"
+                android:textSize="13dp" />
+
+            <RadioButton
+                android:id="@+id/islem3Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/islem_3"
+                android:textSize="13dp" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/kdvOraniTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/outline_arrow_right_black_18"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="@string/kdv_text"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/islemGroupId" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@id/radioButton2Id"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kdvOraniTextId">
+
+            <RadioButton
+                android:id="@+id/radioButton1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/radio_button_1_text" />
+
+            <RadioButton
+                android:id="@+id/radioButton2Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/radio_button_2_text" />
+
+            <RadioButton
+                android:id="@+id/radioButton3Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/radio_button_3_text" />
+
+            <RadioButton
+                android:id="@+id/radioButton4Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryforButton3"
+                android:text="@string/radio_button_4_text" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/kdvEditId"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@id/radioGroupId"
+            app:layout_constraintTop_toTopOf="@id/kdvOraniTextId"
+            app:layout_constraintBottom_toBottomOf="@id/radioGroupId"
+            />
+
+        <TextView
+            android:id="@+id/tutartext"
+            android:layout_width="133dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:drawableLeft="@drawable/outline_arrow_right_black_18"
+            android:text="@string/kdv_text_1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tutarEditText"
+            app:layout_constraintStart_toStartOf="@id/kdvOraniTextId" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tutarEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupId" />
+
+        <Button
+            android:id="@+id/calculateButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/button_text"
+            android:background="@drawable/button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tutarEditText"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/res1Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/outline_arrow_circle_right_black_18"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/calculateButtonId"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            tools:text="@string/kdv_text_2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/res2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/outline_arrow_circle_right_black_18"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/res1Id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            tools:text="@string/kdv_text_2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/res3Id"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/outline_arrow_circle_right_black_18"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/res2Id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            tools:text="@string/kdv_text_4"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
